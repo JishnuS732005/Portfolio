@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mt-6">
           <motion.a
-            href="public/assets/Jishnu_S_Resume.pdf"
+            href="/assets/Jishnu_S_Resume.pdf"
             download="Jishnu_S_Resume.pdf"
             className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-md text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-transform"
             whileHover={{ scale: 1.05 }}

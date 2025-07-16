@@ -66,7 +66,7 @@ const Resume: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="public/assets/Jishnu_S_Resume.pdf"
+                  href="/assets/Jishnu_S_Resume.pdf"
                   download="Jishnu_S_Resume.pdf"
                   className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold flex items-center gap-2 hover:shadow-lg transition-all duration-300 justify-center"
                   whileHover={{ scale: 1.05 }}

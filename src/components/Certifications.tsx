@@ -11,7 +11,7 @@ const Certifications: React.FC = () => {
     description: 'Introductory course on Generative AI, covering large language models, practical applications, and ethical implications.',
     skills: ['Generative AI', 'Prompt Engineering', 'LLMs'],
     verified: true,
-    certificateUrl: 'public/assets/generative-ai-for-everyone.pdf'
+    certificateUrl: '/assets/generative-ai-for-everyone.pdf'
   },
   {
     title: 'Introduction to Artificial Intelligence (AI)',
@@ -20,7 +20,7 @@ const Certifications: React.FC = () => {
     description: 'A beginner-friendly introduction to Artificial Intelligence, its applications, ethical concerns, and how AI is transforming industries.',
     skills: ['AI Concepts', 'Machine Learning', 'Ethics in AI'],
     verified: true,
-    certificateUrl: 'public/assets/introduction-to-ai.pdf'
+    certificateUrl: '/assets/introduction-to-ai.pdf'
   },
   {
     title: 'Getting Started with Git & GitHub',
@@ -42,7 +42,7 @@ const Certifications: React.FC = () => {
       'Python','SQL', 'Django'
     ],
     verified: true,
-    certificateUrl: 'public/assets/ibm-full-stack-developer.pdf'
+    certificateUrl: '/assets/ibm-full-stack-developer.pdf'
   }
 ];
 
