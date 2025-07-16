@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800"
+      className="relative w-full min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800"
     >
       {/* Right-side 3D shape */}
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] z-0 opacity-80 pointer-events-none overflow-hidden max-w-full">
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Text content */}
-      <div className="z-10 text-center px-6 max-w-3xl">
+      <div className="z-10 text-center px-6 max-w-3xl overflow-x-hidden">
         {/* Floating sliding name */}
         <motion.h1
           initial={{ x: "-100%" }}
