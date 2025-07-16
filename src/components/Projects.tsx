@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
       image:
         'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Git'],
-      github: 'https://github.com/Sachin200505/Tourism-Management-System',
+      github: 'https://github.com/JishnuS732005/Tourism-Management-System',
       category: 'Front-end',
     },
   ];

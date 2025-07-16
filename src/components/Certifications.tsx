@@ -4,6 +4,19 @@ import { Award, ExternalLink, Calendar } from 'lucide-react';
 
 const Certifications: React.FC = () => {
   const certifications = [
+    {
+    title: 'IBM Full Stack Software Developer',
+    issuer: 'IBM Skills Network',
+    year: '2024',
+    description: 'Complete full-stack development program covering front-end, back-end, databases, and cloud deployment.',
+    skills: [
+      'HTML', 'CSS', 'JavaScript',
+      'Git', 'Node.js', 'React',
+      'Python','SQL', 'Django'
+    ],
+    verified: true,
+    certificateUrl: '/assets/ibm-full-stack-developer.pdf'
+  },
   {
     title: 'Generative AI for Everyone',
     issuer: 'DeepLearning.AI',
@@ -30,19 +43,6 @@ const Certifications: React.FC = () => {
     skills: ['Git', 'GitHub', 'Collaboration'],
     verified: true,
     certificateUrl: '#'
-  },
-  {
-    title: 'IBM Full Stack Software Developer',
-    issuer: 'IBM Skills Network',
-    year: '2024',
-    description: 'Complete full-stack development program covering front-end, back-end, databases, and cloud deployment.',
-    skills: [
-      'HTML', 'CSS', 'JavaScript',
-      'Git', 'Node.js', 'React',
-      'Python','SQL', 'Django'
-    ],
-    verified: true,
-    certificateUrl: '/assets/ibm-full-stack-developer.pdf'
   }
 ];
 

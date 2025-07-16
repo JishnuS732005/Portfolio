@@ -101,7 +101,7 @@ const Resume: React.FC = () => {
               {showResume ? (
                 <div className="w-full h-[700px]">
                   <embed
-                    src="public/assets/Jishnu_S_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                    src="/assets/Jishnu_S_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
                     type="application/pdf"
                     className="w-full h-full rounded-lg border-2 border-slate-300 dark:border-slate-600"
                   />
