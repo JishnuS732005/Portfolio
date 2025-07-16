@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
         </motion.p>
 
         {/* Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mt-6">
+        <div className="flex flex-wrap justify-center gap-3 mt-6 overflow-hidden">
           <motion.a
             href="/assets/Jishnu_S_Resume.pdf"
             download="Jishnu_S_Resume.pdf"
