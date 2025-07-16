@@ -6,7 +6,10 @@ import { OrbitControls, Icosahedron, Stars } from "@react-three/drei";
 
 const RotatingIcosahedron: React.FC = () => {
   return (
-    <Canvas camera={{ position: [3, 2, 5], fov: 70 }}>
+    <Canvas
+      camera={{ position: [3, 2, 5], fov: 70 }}
+      style={{ width: "100%", height: "100%" }}
+    >
       <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
       <Suspense fallback={null}>
@@ -49,7 +52,7 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800 overflow-hidden"
     >
       {/* Right-side 3D shape */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] z-0 opacity-80">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[250px] h-[250px] md:w-[400px] md:h-[400px] z-0 opacity-80 pointer-events-none">
         <RotatingIcosahedron />
       </div>
 
@@ -63,9 +66,10 @@ const Hero: React.FC = () => {
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6"
         >
           👋Hi, I'm{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+          <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
             Jishnu S
           </span>
+
         </motion.h1>
 
         {/* Changing description */}
@@ -129,7 +133,6 @@ const Hero: React.FC = () => {
             Telegram
           </motion.a>
         </div>
-
 
         {/* Scroll button */}
         <motion.div
