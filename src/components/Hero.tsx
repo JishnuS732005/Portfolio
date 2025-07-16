@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 4, repeat: Infinity }}
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6"
         >
-          👋 Hi, I'm{" "}
+          👋Hi, I'm{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
             Jishnu S
           </span>
