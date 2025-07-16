@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle'; // 👈 Make sure this path is correct
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,8 @@ const Navigation: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 relative">
+          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -50,7 +52,7 @@ const Navigation: React.FC = () => {
             Jishnu S
           </motion.div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
               <motion.a
@@ -75,7 +77,7 @@ const Navigation: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-slate-700 dark:text-slate-300"
@@ -83,9 +85,14 @@ const Navigation: React.FC = () => {
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
+
+          {/* Theme Toggle in Navbar (works on all views) */}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+            <ThemeToggle />
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Panel */}
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
