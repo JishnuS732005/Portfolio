@@ -49,10 +49,10 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800 overflow-hidden"
+      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-800"
     >
       {/* Right-side 3D shape */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[250px] h-[250px] md:w-[400px] md:h-[400px] z-0 opacity-80 pointer-events-none">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] z-0 opacity-80 pointer-events-none overflow-hidden max-w-full">
         <RotatingIcosahedron />
       </div>
 
@@ -69,7 +69,6 @@ const Hero: React.FC = () => {
           <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
             Jishnu S
           </span>
-
         </motion.h1>
 
         {/* Changing description */}
