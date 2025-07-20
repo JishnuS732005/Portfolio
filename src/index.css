@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Prevent extra scrollbar due to focus ring or layout jitter */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+*:focus {
+  outline: none !important;
+}
+
